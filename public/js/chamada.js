@@ -1,35 +1,39 @@
-    
-// let selectField = document.querySelectorAll(".selectField");
-// let selectText = document.querySelectorAll(".selectText");
-// let options = document.querySelectorAll(".options");
-// let list = document.querySelectorAll(".list");
-// let arrowIcon = document.querySelectorAll(".caret");
+let selects = document.querySelectorAll(".selector");
 
-// selectField.onclick = function(){
-//   list.classList.toggle("hide");
-//   arrowIcon.classList.toggle("rotate");
-// }
+selects.forEach(element => {
+  var selectElement = element.querySelector("[name='selectField']");
+  var listElement = element.querySelector("#list");
+  var arrowIcon = selectElement.querySelector(".caret");
+  var options = listElement.querySelectorAll(".options");
+  var selectText = selectElement.querySelector("#selectText");
 
-// for(option of options){
-//   option.onclick = function(){
-//     selectText.innerHTML = this.textContent;
-//     list.classList.toggle("hide");
-//     arrowIcon.classList.toggle("rotate");
-//     }
-// }
+  selectElement.onclick = function(){
+    listElement.classList.toggle("hide");
+    arrowIcon.classList.toggle("rotate");
+  }
 
-$(function(){
-  $('.selectField').click(function(i){
-      $('.list').removeClass('hide');
-      $('.arrowIcon').addClass('rotate');
-      $(this).addClass('hide');
-  });
+  for(option of options){
+    option.onclick = function(){
+      selectText.innerHTML = this.textContent;
+      listElement.classList.toggle("hide");
+      arrowIcon.classList.toggle("rotate");
+      }
+  }
 });
+
+// $(document).ready(function(e){
+//   $( "[name=selectField]" ).on( "click", function() {
+//     $( "#list" ).toggleClass( "hide" );
+//     $( ".caret" ).toggleClass( "rotate" );
+  
+//   });
+// })
+
 
 // anexar arquivo
 
-let file = 
+// let file = 
 
-document.getElementById("file").addEventListener('change', () =>{
-  document.querySelectorAll('.upload-file').textContent = this.file[0].name
-});
+// document.getElementById("file").addEventListener('change', () =>{
+//   document.querySelectorAll('.upload-file').textContent = this.file[0].name
+// });
