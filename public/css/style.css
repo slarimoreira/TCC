@@ -10,6 +10,7 @@ html{
 
   --blue-light: #DFEEFF;
   --blue-button: #5D89CB;
+  --blue-welcome: #66C8FF;
   --blue-medium: #9DC5F3;
   --gray: #A1A1A1;
   --hover-dropdown: #DCE5EC;
@@ -44,18 +45,70 @@ body::-webkit-scrollbar-thumb{
   border-radius: 1.2rem;
 }
 
+/* ------ navbar Top -----*/
+
+.navbar_home{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94vw;
+  height: 10vh;
+  padding-right: 2rem;
+  box-shadow: 0px 0px 10px 0px #00000040;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+}
+
+a .name_logo{
+  margin-left: 1rem;
+}
+
+.logo_home{
+  display: flex;
+  
+  justify-content: center;
+  margin-left: 2rem;
+  width: 4rem;
+}
+
+.user-component{
+  display: flex;
+  align-items: center;
+}
+
+.user-name{
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+
+
 /* ----- footer ------ */
 
 footer{
-  margin-top: 3rem;
-  padding: 0 0 0 7.8rem;
-  width: 100%;
+  margin-top: 2rem;
+  bottom: 0;
+  width: 94%;
   background-color: var(--blue-dark);
 }
 
 .list-creators{
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 0;
   display: flex;
   justify-content: space-evenly;
 }

@@ -1,38 +1,59 @@
-Body{
-  
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.teacher-img{
+.teacher-img {
   position: fixed;
-  width: 1503px;
-  height: 3005px;
   left: -317px;
   top: -366px;
 }
 
-.form{
-  
-}
-
-.form-login{
+.form-login {
   display: flex;
   flex-direction: column;
-  margin-left: 5.0rem;
 }
 
-.login{
-  width: 500px;
-  height: 98px;
+.form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   
+}
+
+.logo{
+  width: 18rem;
+}
+
+.login {
+  width: 400px;
+  height: 60px;
+  margin-bottom: 1.2rem;
+
   background: #FFFFFF;
   border: 1px solid #275975;
   border-radius: 10px;
 }
 
-label{
-  font-size: 2.8rem;
+label {
+  font-size: 2.2rem;
+  margin-left: 1rem;
 }
 
-.container{
-  display: flex;
+.forgot-password{
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.submit{
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  width: 18rem  ;
+  height: 4.0rem;
+  color: var(--white);
+  background-color: var(--blue-button);
+  border: none;
+  border-radius: 1.2rem;
 }

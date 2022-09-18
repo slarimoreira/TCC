@@ -1,7 +1,11 @@
+body{
+  margin-left: 7.8rem;
+}
+
 .container{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   padding-top: 3rem;
 }
 
@@ -19,7 +23,7 @@
 }
 
 .form{
-  padding-left: 9rem;
+  padding-left: 1rem;
 }
 
 .title-form{
