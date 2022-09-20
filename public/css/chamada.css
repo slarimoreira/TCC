@@ -1,11 +1,8 @@
-body{
-  margin-left: 7.8rem;
-}
 
 .container{
   display: flex;
   align-items: center;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   padding-top: 3rem;
 }
 
@@ -28,6 +25,7 @@ body{
 
 .title-form{
   color: var(--white);
+  font-size: 2rem;
 }
 
 .date{
@@ -139,6 +137,7 @@ body{
 
 h2{
   font-weight: 600;
+  font-size: 1.8rem;
 }
 
 .attach_file{
@@ -170,6 +169,7 @@ input[type="file"]{
 }
 
 .submit{
+  cursor: pointer;
   font-size: 1.8rem;
   margin-top: 4rem;
   width: 30%;
@@ -178,6 +178,11 @@ input[type="file"]{
   background-color: var(--blue-button);
   border: none;
   border-radius: 1.2rem;
+  transition: 0.2s;
+}
+
+.submit:hover{
+  background-color: var(--button-hover);
 }
 
 .student{

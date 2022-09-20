@@ -6,24 +6,25 @@
 
 .teacher-img {
   position: fixed;
-  left: -317px;
+  left: -290px;
   top: -366px;
 }
 
 .form-login {
   display: flex;
   flex-direction: column;
+  
 }
 
 .form{
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+  margin-right: 8rem;
 }
 
 .logo{
-  width: 18rem;
+  width: 14rem;
 }
 
 .login {
@@ -46,6 +47,12 @@ label {
   font-size: 1.6rem;
 }
 
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .submit{
   cursor: pointer;
   font-size: 1.8rem;
@@ -56,4 +63,9 @@ label {
   background-color: var(--blue-button);
   border: none;
   border-radius: 1.2rem;
+  transition: 0.2s;
+}
+
+.submit:hover{
+  background-color: var(--button-hover);
 }

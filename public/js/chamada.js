@@ -20,20 +20,3 @@ selects.forEach(element => {
       }
   }
 });
-
-// $(document).ready(function(e){
-//   $( "[name=selectField]" ).on( "click", function() {
-//     $( "#list" ).toggleClass( "hide" );
-//     $( ".caret" ).toggleClass( "rotate" );
-  
-//   });
-// })
-
-
-// anexar arquivo
-
-// let file = 
-
-// document.getElementById("file").addEventListener('change', () =>{
-//   document.querySelectorAll('.upload-file').textContent = this.file[0].name
-// });

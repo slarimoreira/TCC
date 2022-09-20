@@ -12,8 +12,19 @@ app.get("/", (req, res) =>{
   res.render("index");
 });
 
+app.get("/aluno", (req, res) =>{
+  res.render("aluno");
+});
+app.get("/professor", (req, res) =>{
+  res.render("professor");
+});
+
 app.get("/chamada", (req, res) =>{
   res.render("chamada");
+});
+
+app.get("/pendente", (req, res) =>{
+  res.render("pendente");
 });
 
 app.listen(8070, () =>{
